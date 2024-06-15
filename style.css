@@ -11,10 +11,12 @@ body {
 
 h1 {
     color: #333;
+    font-size: 48px;
+    font-weight: 900;
 }
 
 p{
-    font-size: 24px;
+    font-size: 30px;
     font-weight: 500;
 }
 
@@ -63,5 +65,5 @@ p{
 }
 
 #reset:hover {
-    background-color: #da190b;
+    background-color: #aa2016;
 }

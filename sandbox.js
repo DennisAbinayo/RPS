@@ -1,4 +1,4 @@
-// Declare a variable to store the array of choices (rack,paper and scissors)
+// Declare a variable to store the array of choices (rock,paper and scissors)
 let choices = ['rock', 'paper', 'scissors'];
 
 
@@ -7,7 +7,7 @@ let playerScore = 0;
 let computerScore = 0;
 let tieScore = 0;
 
-// Targetting the button with id of rock to add event listener
+// Targetting the button with id of rock, to add event listener
 let rock = document.getElementById('rock');
 rock.addEventListener('click', () => {
 playRound('rock');

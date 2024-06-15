@@ -48,12 +48,17 @@ if (playerChoice === computerChoice) {
 
 // Adding outcome to the div with result id
 let outcome = document.getElementById('result');
-outcome.innerText = `${result} \n (Player: ${playerScore}, Computer: ${computerScore})`;
+outcome.innerText = `${result} \n (Player: ${playerScore}, Computer: ${computerScore}, Tie: ${tieScore})`;
 }
 
 
 //Resetting 
-let resetBtn = document.getElementById('reset').addEventListener('click',()=>{
+let resetBtn = document.getElementById('reset');
+resetBtn.addEventListener('click',()=>{
+    playerScore = 0;
+    computerScore = 0;
+    tieScore = 0;
+
     let outcome = document.getElementById('result');
     outcome.innerText = '';
 });
